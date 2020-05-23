@@ -1,25 +1,32 @@
 # Data_Analysis
 Data Analysis Course Group project
+
 PREDICTION OF POTENTIAL DRUG-TARGET INTERACTIONS USING MACHINE LEARNING ALGORITHMS
 
 Problem Identification
+
 We chose to study the unknown interactions between existing drugs and the well-known proteins in human or animals.
 
 Motivation
+
 When we look at the drug database like https://www.drugbank.ca/, we found that for a specific drug, only the experimentally proved targets(proteins) are listed. However, it has been actively reported that except for the experimentally proved targets, the drug also interacts with other targets. That explains why drugs have side effects. We also saw some news that a drug was developed to cure a certain disease, but it turned out to be effective for curing other diseases. So, we are motivated to predict the unknown interactions using machine learning algorithms.
 
 Kind of Data
+
 We will use the data downloaded from Drugbank database. The data is saved in a csv file that lists the drug-target pairs which have been proved to be interacting with each other. The columns include drug ID, drug name, target ID and target name.
 
 Data Source
+
 We downloaded the data from Drugbank database: https://www.drugbank.ca/. In detail, we clicked the “Downloads” tag in the navigation bar of the homepage, then we went to “EXTERNAL LINKS”, and then we downloaded “Target Drug-UniProt Links” for DRUG GROUP “ALL”. The data is saved in the csv format.
 
 Questions To Be Answered
+
 1.	Predict the unknown interactions between drugs and targets. In other words, look for more drug-target pairs.
 2.	Predict the interaction probability of each newly found drug-target pair. The researchers in the drug development area can use this predicted result as a direction to test the validity. This will contribute to the drug repurposing.
 3.	Do the accuracy analysis of our predictions.
 
 Preliminary Data Manipulation
+
 1.	How you have imported your data
 We used read_csv() function of pandas to import the data into a Jupyter Notebook.  
 
