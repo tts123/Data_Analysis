@@ -47,8 +47,6 @@ Since they are from different organisms, we treat them as different. Therefore, 
 
 4.	An initial graphical summary of general aspects of our data.
 data.groupby(['DrugBank ID']).count() is used to visualize how many interactions each drug is involved in.
- 
-
 data.groupby(['UniProt ID']).count() is used to visualize how many interactions each target is involved in.
  
 
